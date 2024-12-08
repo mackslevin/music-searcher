@@ -4,7 +4,21 @@ import gemini.gemini as gemini
 import youtube.youtube as youtube
 
 def generate_songs(prompt):
-    """Searches for music based on a prompt and returns results in JSON format."""
+    """
+    Searches for music based on a prompt and returns results in JSON format.
+    
+    Args: 
+        prompt: String, the instructions for what kind of music the user would like
+    Returns: 
+        JSON list representing a playlist of songs. This is the structure: 
+        [
+            { 
+                "title": String,
+                "artist": String,
+                "youtube_url": String?
+            }
+        ]
+    """
 
     songs = gemini.get_songs_from_gemini(prompt)
 

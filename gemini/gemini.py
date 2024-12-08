@@ -51,7 +51,6 @@ def get_songs_from_gemini(prompt):
           if not isinstance(song.get("title"), str) or not isinstance(song.get("artist"), str):
             return f"Invalid song format in Gemini response: {song}"
 
-
         return songs
 
     except (genai.types.APIError, json.JSONDecodeError) as e:
