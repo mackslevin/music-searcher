@@ -30,7 +30,7 @@
 
 ## Usage
 
-1. Add your own API keys
+1. Add your own API key and system instruction. The project is set up to use a .env for these values.
 
 2. Run the script from the command line, providing your search prompt:
     ```
