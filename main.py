@@ -25,7 +25,6 @@ def generate_songs(prompt):
     if isinstance(songs, str) and songs.startswith("Error"):  # Check if Gemini returned an error
         return json.dumps({"error": songs}, indent=4)
 
-
     results = []
     for song in songs:
         youtube_url = youtube.get_youtube_url(song["title"], song["artist"])
