@@ -9,7 +9,6 @@ load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 GEMINI_SYSTEM_INSTRUCTION = os.getenv("GEMINI_SYSTEM_INSTRUCTION")
 
-
 class Song(typing.TypedDict):
     title: str
     artist: str

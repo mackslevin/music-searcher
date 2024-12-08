@@ -6,16 +6,16 @@ load_dotenv()
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
 def create_youtube_query(track_title, artist_name):
-  """ 
-  Creates a very special YouTube search query for a song. 
+    """ 
+    Creates a very special YouTube search query for a song. 
 
-  Args: 
+    Args: 
     track_title: String, a song title.
     artist_name: String, the name of the artist who made that song.
-  Returns: 
+    Returns: 
     String representing a YouTube search query.
-  """
-  return f"{artist_name} - {track_title} (Official Music Video)"
+    """
+    return f"{artist_name} - {track_title} (Official Music Video)"
 
 def get_youtube_url(track_title, artist_name):
     """ 
